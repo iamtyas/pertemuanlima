@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">TugasKu</string>
+    <string name="value_nama">Nama</string>
+    <string name="value_telepon">Nomor Telepon/WA</string>
+    <string name="value_email">Alamat Email</string>
+    <string name="value_deskripsi">Deskripsi Tugas</string>
+    <string name="value_deadline">Deadline Tugas</string>
+    <string name="value_judul">Judul Tugas</string>
+    <string name="value_kirim">Kirim</string>
+    <string name="intro">PUSING SAMA TUGAS? TUGASKU AJA!</string>
+</resources>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="28dp"
+    tools:context=".KirimActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_nama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="13dp"
+        android:layout_marginBottom="17dp"
+        android:hint="@string/value_nama"
+        android:padding="13dp"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:id="@+id/edit_nomor"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_nama"
+        android:layout_marginBottom="17dp"
+        android:hint="@string/value_telepon"
+        android:padding="13dp"
+        android:inputType="phone"/>
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_nomor"
+        android:layout_marginBottom="17dp"
+        android:hint="@string/value_email"
+        android:padding="13dp"
+        android:inputType="textEmailAddress"/>
+
+    <EditText
+        android:id="@+id/edit_deadline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_email"
+        android:layout_marginBottom="17dp"
+        android:hint="@string/value_deadline"
+        android:padding="13dp"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/edit_judul"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_deadline"
+        android:layout_marginBottom="17dp"
+        android:hint="@string/value_judul"
+        android:padding="13dp"
+        android:inputType="textCapSentences"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/edit_judul"
+        android:id="@+id/scrolldeskripsi">
+
+        <EditText
+            android:id="@+id/edit_deskripsi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="17dp"
+            android:height="150dp"
+            android:hint="@string/value_deskripsi"
+            android:padding="13dp"
+            android:inputType="textMultiLine"/>
+    </ScrollView>
+<!--    <EditText-->
+<!--        android:id="@+id/edit_lampiran"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/scrolldeskripsi"-->
+<!--        android:layout_marginBottom="17dp"-->
+<!--        android:hint="@string/value_lampiran"-->
+<!--        android:padding="13dp" />-->
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:height="65dp"
+        android:padding="13dp"
+        android:text="@string/value_kirim"
+        android:id="@+id/btn_kirim"/>
+    </RelativeLayout>
+</ScrollView>
